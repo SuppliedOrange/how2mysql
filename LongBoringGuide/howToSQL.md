@@ -88,7 +88,7 @@ So back to the topic, we made **a table**! Let's have a look at all the tables i
 ```sql
 SHOW TABLES
 ```
-![](../imgs/showtables.png) <br>
+![](../imgs/showtables.png) <br> (this says `mbti`, assume it says `mbtitb`)
 
 Again, if you don't like it (it makes you angry) you can drop it
 ```sql
