@@ -108,7 +108,7 @@ So at last, you have a server in the server room. Now let's actually use the tab
 # CRUD
 **Create Read Update Delete** is the standard way of operating on databases but who cares. There's basically four main things you can do with tables. <br><br>
 ## Create data
-So now we'll actually put stuff in the table.
+So now we'll actually put stuff in the table. We will add Johan's data and specify each column value.
 ```sql
 INSERT INTO mbtitb (name,age,mbti)
 VALUES ("Johan",16,"INTJ");
@@ -149,7 +149,7 @@ SELECT * FROM mbtitb
 There it is! We chose to see all the data from all the columns because we used `*`. <br>
 In general programming `*` refers to "everything" and we used it here to get all the `columns` from `mbtitb`
 
-To see a specific column, like `mbti` we do
+To see a specific column like `mbti` we do
 ```sql
 SELECT mbti FROM mbtitb
 ```
