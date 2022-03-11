@@ -6,8 +6,8 @@ Assuming you have MySQL Command Line Client already, launch it and enter your cr
 
 # Databases and Tables
 So in MySQL there's literally two things- `Databases` and `Tables` <br>
-Imagine a database as a server room and tables as the servers. The server is where you keep the actual data.
-
+Imagine a database as a server room and tables as the servers. The server is where you keep the actual data. <br>
+Here's a rough example of what the system is like imagining it's a dictionary
 ```json
 {
 
