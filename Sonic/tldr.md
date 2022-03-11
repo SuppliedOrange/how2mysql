@@ -44,6 +44,28 @@ SELECT * FROM tb;
 ```sql
 SELECT columnName,columnName2 FROM tb;
 ```
+# Insert row into table
+```sql
+INSERT INTO tb (columnName,columnName..)
+VALUES (columnName,columnName...),(columnName,columnName...)
+;
+```
+# Update row in table
+```sql
+UPDATE tb
+SET column = sommething, column2 = something
+WHERE condition;
+```
+
+# Delete row in table
+```sql
+DELETE FROM tb WHERE condition;
+```
+
+# Get column from table
+```sql
+SELECT (* or columnName,columnName...) FROM tb
+```
 
 # Show Databases
 ```sql
