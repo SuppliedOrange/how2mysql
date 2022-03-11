@@ -162,7 +162,7 @@ Let's say we wanna remove a specific row like `Bhumika's` row.
 ```sql
 DELETE FROM mbtitb WHERE name = "Bhumika"
 ```
-What this statement does is delete every row that matches the condition `name = "Bhumika"`. If there was another row named Bhumika it would be deleted too.
+What this statement does is delete every row that matches the condition `name = "Bhumika"`. If there was another with it's name as Bhumika it would be deleted too.
 <br><br>
 
 # That's it.
