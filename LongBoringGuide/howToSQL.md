@@ -70,9 +70,9 @@ Let's say I wanna make a table with person's `name`, `age` and  `mbti`. I want i
 | Dhruv    |   16  |  INTP |
 +----------+-------+-------+
 ```
-So let's create a table called `mbti` with these columns ->
+So let's create a table called `mbtitb` with these columns ->
 ```sql
-CREATE TABLE mbti (
+CREATE TABLE mbtitb (
     name varchar(255),
     age int(255)
 );
@@ -92,12 +92,12 @@ SHOW TABLES
 
 Again, if you don't like it (it makes you angry) you can drop it
 ```sql
-DROP TABLE mbti
+DROP TABLE mbtitb
 ```
 
 It seems we have forgotten to add a column, oh no! Fret not we can simply add another column to this table
 ```sql
-ALTER TABLE mbti
+ALTER TABLE mbtitb
 ADD mbti varchar(255);
 ```
 
@@ -110,12 +110,12 @@ So at last, you have a server in the server room. Now let's actually use the tab
 ## Create data
 So now we'll actually put stuff in the table.
 ```sql
-INSERT INTO mbti (name,age,mbti)
+INSERT INTO mbtitb (name,age,mbti)
 VALUES ("Johan",16,"INTJ");
 ```
 We can add multiple things at once:
 ```sql
-INSERT INTO mbti (name,age,mbti)
+INSERT INTO mbtitb (name,age,mbti)
 VALUES ("Bhumika", 16, "INTP"), ("Dhruv",17,"INTK");
 ```
 Good job! We've made the table.. oh dear it seems we've made an error with `Dhruv's` data. However will we change this? <br>
@@ -126,11 +126,11 @@ Good job! We've made the table.. oh dear it seems we've made an error with `Dhru
 
 Let's say we want to change `Dhruv's` mbti to `INTP` and age to `16`. How do we tell the machine where to look and what to update? Let's try putting it in basic english. Like this:
 
-*Update the table mbti and set the value of mbti to "INTP" and set the value of age to 17 where the person's name is "Dhruv"*
+*Update the table mbtitb and set the value of mbti to "INTP" and set the value of age to 17 where the person's name is "Dhruv"*
 
 So putting this into sql-talk,
 ```sql
-UPDATE mbti
+UPDATE mbtitb
 SET mbti = "INTP", age = 16
 WHERE name = "Dhruv";
 ```
@@ -139,19 +139,19 @@ It's as easy as that! We updated two `column` values for a `row`.
 
 ## Read data
 
-Great so we've made the table and everything's perfect. Only thing left to do now is to actually see the data. Let's read the table `mbti`
+Great so we've made the table and everything's perfect. Only thing left to do now is to actually see the data. Let's read the table `mbtitb`
 
 ```sql
-SELECT * FROM mbti
+SELECT * FROM mbtitb
 ```
 ![](../imgs/showtabledata.png)
 
 There it is! We chose to see all the data from all the columns because we used `*`. <br>
-In general programming `*` refers to "everything" and we used it here to get all the `columns` from `mbti`
+In general programming `*` refers to "everything" and we used it here to get all the `columns` from `mbtitb`
 
 To see a specific column, like `mbti` we do
 ```sql
-SELECT mbti FROM mbti
+SELECT mbti FROM mbtitb
 ```
 ![](./imgs/showspecificcolumns.png)
 <br>
@@ -160,7 +160,7 @@ SELECT mbti FROM mbti
 
 Let's say we wanna remove a specific row like `Bhumika's` row.
 ```sql
-DELETE FROM mbti WHERE name = "Bhumika"
+DELETE FROM mbtitb WHERE name = "Bhumika"
 ```
 What this statement does is delete every row that matches the condition `name = "Bhumika"`. If there was another row named Bhumika it would be deleted too.
 <br><br>
@@ -173,4 +173,4 @@ You are now a MySQL pro. Well done
 
 Not really, this is just the basics. There's some advanced stuff that we'll only need for computer exams so yeah you can just read the textbook cuz its easier.
 
-Also https://www.w3schools.com/sql/ has most SQL functions and helped me quite a bit.
+Also https://www.w3schools.com/sql/ has most SQL functions and has helped me quite a bit.
