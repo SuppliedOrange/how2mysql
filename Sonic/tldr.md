@@ -6,7 +6,7 @@ CREATE DATABASE db;
 
 # Delete Database
 ```sql
-DROP DATABASE cooldb;
+DROP DATABASE db;
 ```
 
 # Use Database
